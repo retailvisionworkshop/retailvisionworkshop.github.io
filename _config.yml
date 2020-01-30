@@ -1,0 +1,20 @@
+# Site settings
+title: RetailVision
+
+# Urls
+url: "https://retailvisionworkshop.github.io" # the base hostname & protocol for your site
+#url: "http://locahost:4000" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+
+# Handling Reading
+safe: true
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Build settings
+permalink: /:categories/:title/
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
