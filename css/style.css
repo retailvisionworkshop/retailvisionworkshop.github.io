@@ -139,7 +139,7 @@
 	#major_line {
 		width: 111px;
 		height: 2px;
-		border: solid 1.8px #b0f778;
+		border: solid 1px #b0f778;
 		margin-top: 2em;
 		margin-bottom: 2em;
 
@@ -149,7 +149,7 @@
 	}
 	#minor_line {
 		width: 4em;
-		height: 2px;
+		height: 1px;
 		border: solid 1px #e7e7e7;
 		margin: 0 auto;
 		margin-top: 0.7em;
@@ -181,7 +181,7 @@
 	}
 
 	#table_row {
-		/*padding-left: 10em;*/
+		padding-left: 7em;
 	}
 
 	#table_left {
@@ -269,6 +269,21 @@
 		background-image: url("/images/Logo.svg");
 		background-repeat: no-repeat, repeat;
 	}
+
+
+	#challenge_button_frame {
+		border: solid 1px rgb(151, 151, 151);
+		border-style: solid; 
+		border-width: 2px; 
+		border-radius: 4px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-left: 3em;
+		margin-right: 3em;
+		font-size: 1.15em;
+		text-transform: uppercase;
+	}
+
 
 
 /* Section/Article */
@@ -441,7 +456,12 @@
 			}
    .image-circle{
         border-radius: 50%;
-        width: 95%;
+        width: 85%;
+   }
+
+   .image-circle-organizers{
+        border-radius: 50%;
+        width: 85%;
    }
 
     .thumbnail{
