@@ -284,6 +284,11 @@
 		text-transform: uppercase;
 	}
 
+	#challenge_overview_title {
+		font-family: 'Roboto-Medium', sans-serif;
+		letter-spacing: 0px;
+	}
+
 
 
 /* Section/Article */
