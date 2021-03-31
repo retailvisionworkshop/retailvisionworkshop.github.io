@@ -1,0 +1,66 @@
+---
+layout: default
+title: Pricing Challenge 2021
+---
+<!-- Main -->
+<article id="main">
+    
+<!-- One -->
+    <section class="wrapper style3 container special">
+
+                <!-- <header class="major"> -->
+                    <!-- <h2 class="overview">Challenge Overview</h2> -->
+                <!-- </header> -->
+                <h2 id="challenge_overview_title">Product Pricing</h2><br>
+                <h2>Challenge Overview</h2>
+
+                <div id="line_wrapper"><div id="major_line"></div></div>
+
+                <p>
+                    The world of retail takes image understanding to unexplored territories with hundreds of crowded elements per image, such as products, price labels, shelves, and more. This challenge is based on Trax’s data of supermarket shelves and introduces the problem of product pricing - given product boxes, the price of each product should be found by considering the price labels nearby. This challenge includes both the reading of price text and linking prices to relevant products. 
+                </p>
+                <img src="/images/pricing_challenge_2021/teaser.png" width=80%>
+                <p>A typical image in our pricing dataset</p>
+    </section>
+
+    <section class="wrapper style3 container special">
+
+                <header class="major">
+                    <h2 class="overview">Dataset</h2>
+                </header>
+
+                <div id="line_wrapper"><div id="major_line"></div></div>
+
+                <p>
+                    The TraxPricing dataset contains box and price annotations for 15063 products in shelf images from many supermarkets around the world. The dataset can be downloaded from <a href="https://trax-geometry.s3.amazonaws.com/cvpr_challenge/cvpr2021/trax_pricing_dataset_v1.zip">here</a> and is provided solely for academic and non-commercial purposes.
+                </p>
+
+    </section>
+
+    <section class="wrapper style3 container special">
+
+                <header class="major">
+                    <h2 class="overview">Challenge Info</h2>
+                </header>
+
+                <div id="line_wrapper"><div id="major_line"></div></div>
+
+                <p>
+                    This challenge includes a single track, where participants are invited to develop and train their methods using the data in the TraxPricing dataset and be tested on a yet to be released test set. Challenge winners will receive prizes and may be invited to give a presentation at the <a href="/">workshop</a>:
+                </p>
+                <img src="/images/prizes_BIG.png" style="max-width:50%; height:auto;">
+
+                <h3>Procedure and Evaluation</h3>
+                <p>Methods will be evaluated on a new test set that will be published by the 24th of May. <b>The test set will be published with the same annotations but without the prices</b>. To participate in the challenge please run your model on the test data and submit your results and preferred contact details to the email below by May 31. There is no need to register. The results file should have the same structure as the test annotations file, and also include an additional "confidence" column. The final score will be calculated as the area below the precision-recall curve, where a true positive is a product whose predicted price exactly matches the ground-truth price. A Python file with this calculation will be published soon.</p>
+
+                <p>
+                    Results will be announced by email at June 1. <font style="color:red">Winners must provide a document presenting their method by June 8 to be eligible for the reward</font>. Other participants are encouraged to present their methods as well. Received methods will be published in the challenge website. Authors may also be invited to present a talk at the workshop. 
+                </p>
+
+                <h3>Questions and Submissions</h3>
+                <p> For questions about the challenge or to submit your results for evaluation please contact Ehud Barnea (ehudb at traxretail dot com).</p>
+    </section>
+
+
+</article>
+<br><div style="text-align: center; font-size: 20px;">Adapted from <a href="http://dynavis.github.io">dynavis.github.io</a></div><br>
