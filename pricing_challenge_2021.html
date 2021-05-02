@@ -51,7 +51,7 @@ title: Pricing Challenge 2021
                 <img src="/images/prizes_BIG.png" style="max-width:50%; height:auto;">
 
                 <h3>Procedure and Evaluation</h3>
-                <p>Methods will be evaluated on a new test set that will be published by the 24th of May. <b>The test set will be published with the same annotations but without the prices</b>. To participate in the challenge please run your model on the test data and submit your results and preferred contact details to the email below by May 31. There is no need to register. The results file should have the same structure as the test annotations file, and also include an additional "confidence" column. The final score will be calculated as the area below the precision-recall curve, where a true positive is a product whose predicted price exactly matches the ground-truth price. A Python file with this calculation will be published soon.</p>
+                <p>Methods will be evaluated on a new test set that will be published by the 24th of May. <b>The test set will be published with the same annotations but without the prices</b>. To participate in the challenge please run your model on the test data and submit your results and preferred contact details to the email below by May 31. There is no need to register. The results file should have the same structure as the test annotations file, and also include an additional "confidence" column. The final score will be calculated as the area below the precision-"coverage" curve, where a true positive is a product whose predicted price exactly matches the ground-truth price and coverage is the ratio of (true or false) products above the confidence value. A Python file with this calculation will be published soon (update - calculation file is provided below).</p>
 
                 <p>
                     Results will be announced by email at June 1. <font style="color:red">Winners must provide a document presenting their method by June 8 to be eligible for the reward</font>. Other participants are encouraged to present their methods as well. Received methods will be published in the challenge website. Authors may also be invited to present a talk at the workshop. 
@@ -69,6 +69,10 @@ title: Pricing Challenge 2021
                   <li>- You may use publicly available paid services such as cloud APIs provided by cloud providers like Google or Amazon.</li>
                   <li>- You may not use algorithms to detect more products or have more products data.</li>
                 </ul>
+
+                <h3><font style="color:red">Update (May 2)</font></h3>
+                <p>Please use the evaluation code provided in <a href="https://trax-geometry.s3.amazonaws.com/cvpr_challenge/cvpr2021/eval_code_v1.zip">eval_code_v1.zip</a> to evaluate your results with the training data. The same calculation will be use to evaluate results on the test set. The provided test set will include a set of images and annotations including the coordinates of product boxes, but without the price and the confidence at each box.</p>
+                <p>The published annotations used for training are accurate in most cases. However, as in any dataset, there still were some rather noisy cases with incorrect annotations. To make the evaluation as accurate as possible, we further annotated the test set to make sure it is extra clean. All prices were annotated by several annotators and the test set will only include prices that were agreed upon by the majority of annotators. Therefore, the test set will be as clean and accurate as it gets.</p>  
 
                 <h3>Questions and Submissions</h3>
                 <p> For questions about the challenge or to submit your results for evaluation please contact Ehud Barnea (ehudb at traxretail dot com).</p>
