@@ -18,8 +18,11 @@ title: Recognition Challenge 2021
                 <div id="line_wrapper"><div id="major_line"></div></div>
 
                 <p>
-                    The growing customer demand for E-commerce is becoming more and more diversified, growing the need for methods that not only require a single modality such as product images, but also call for the usage of textual captions that describe said images. Bridging the gap between visual representation and high-level semantic concepts remains an open research topic for obtaining users' search intentions. This challenge is based on the the AliProducts2 dataset that is designed to bridge this gap. This realistic large-scale and multi-model dataset consists of ~5M image-caption pairs of ~100K fine-grained products. Challenge participants must find the top-K product candidates to match a query such as "blue men's turtleneck sweater". This challenge is a natural continuation of our previous image-only AliProducts challenge which had more than 1000 competing teams.
+                    The growing customer demand for E-commerce is becoming more and more diversified, growing the need for methods that not only require a single modality such as product images, but also call for the usage of textual captions that describe said images. Bridging the gap between visual representation and high-level semantic concepts remains an open research topic for obtaining users' search intentions. This challenge is based on the the AliProducts2 dataset that is designed to bridge this gap. This realistic large-scale and multimodal dataset consists of ~5M image-caption pairs of ~100K fine-grained products. Challenge participants must find the top-K product candidates to match a query such as "blue men's turtleneck sweater". This challenge is a natural continuation of our previous image-only AliProducts challenge which had more than 1000 competing teams.
                 </p>
+                
+                    Visit the <a href="https://tianchi.aliyun.com/competition/entrance/531884/">challenge website</a>.
+                
 
                 <!-- <img src="/images/recognition_challenge_2021/recognition_full.png" width=80%> -->
     </section>
@@ -32,8 +35,21 @@ title: Recognition Challenge 2021
 
                 <div id="line_wrapper"><div id="major_line"></div></div>
 
-                <p>
-                    TBA
+                <p style="text-align: left;">
+                    In this competition we released a brand new multimodal dataset with the aim to present the computer vision research community with the challenges encountered by E-commerce industry in the following dimensions:
+                    <ul style="text-align: left;">
+                        <li>● Imbalanced modality gap in cross-modal product retrieval</li>
+                        <li>● A very large number of text-image pairs in the data [~5M]. The text in the pair is product title, description, etc., and the image is the product display picture. The pairs are stored in [JSON format] and are organized as follow: { "caption": string, "image": string }</li>
+                        <li>● A very large number of products [>100k]</li>
+                        <li>● Great difficulty in distinguishing some of the products</li>
+                        <li>● Text titles are not fully reliable</li>
+                        <li>● Other general problems such as different scale variance, scene complexity, etc…</li>
+                    </ul>
+                    </p>
+                <p style="text-align: left;">
+                    This realistic large-scale and multimodal dataset consists of ~5M image-caption pairs of ~100K fine-grained products. Challenge participants must find the top-K product candidates to match a query such as "blue men's turtleneck sweater". The winners of the competition will need to demonstrate creativity and at the same time technical knowledge in order to effectively deal with this dataset of this size and properties. This task demonstrates some of the problems faced by the retail industry on a regular basis.
+
+                    Detailed participant instructions can be accessed <a href="https://tianchi.aliyun.com/competition/entrance/531884/"> here</a>.
                 </p>
 
 
@@ -48,8 +64,9 @@ title: Recognition Challenge 2021
 
                 <div id="line_wrapper"><div id="major_line"></div></div>
 
-                <p>
-                    TBA
+                <p style="text-align: left;">
+                    The Cross-Modal Product retrieval models are evaluated by recall metrics on the test dataset. Recall@5 and Recall@10 will be computed on all test queries. The overall performance is computed by taking the average of Recall@5 and Recall@10 on the test querys. 
+                    The results must be submitted in a json. A valid json contains in each row: {'caption':string, 'top5':[string...string], 'top10':[string...string]}. 'top5' refers to the top-5 retrieval results obtained by your algorithm and 'top10' refers to top-10 results obtained by your model.
                 </p>
                 
     </section>
